@@ -2,6 +2,10 @@
 
 namespace Jobers.Domain.Model
 {
+    public interface IVagaRepositorio
+    {
+    }
+
     public class Vaga : BaseEntidade<Vaga>
     {
         public string NomeEmpresa { get; set; }

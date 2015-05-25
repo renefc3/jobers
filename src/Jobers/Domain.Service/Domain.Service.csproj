@@ -39,8 +39,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IEmpresaServico.cs" />
+    <Compile Include="Implementacao\EmpresaServico.cs" />
+    <Compile Include="Implementacao\ProfissionalServico.cs" />
+    <Compile Include="Implementacao\VagaServico.cs" />
+    <Compile Include="IProfissionalServico.cs" />
+    <Compile Include="IVagaServico.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Model\Domain.Model.csproj">
+      <Project>{DDE66A4D-E93F-4346-8A79-D380B60A6CFB}</Project>
+      <Name>Domain.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.VM\Domain.VM.csproj">
+      <Project>{2C729980-09C0-4661-B02C-9615846E0D81}</Project>
+      <Name>Domain.VM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.IOC\Infrastructure.IOC.csproj">
+      <Project>{C74F3418-2889-4205-8ABD-B06331AB19EE}</Project>
+      <Name>Infrastructure.IOC</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

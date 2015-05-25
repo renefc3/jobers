@@ -36,4 +36,53 @@ namespace Jobers.Domain.VM
         Sucesso = 1,
         Erro = 2
     }
+
+    public class VagaAdicionarVagaResponseVM
+    {
+    }
+
+    public class VagaAdicionarVagaRequestVM
+    {
+    }
+
+    public class EmpresaSalvarResponseVM
+    {
+    }
+
+    public class EmpresaSalvarRequestVM
+    {
+    }
+
+    public class EmpresaPesquisarRequestVM
+    {
+    }
+
+    public class EmpresaPesquisarResponseVM
+    {
+    }
+
+    public class ProfissionalPesquisarRequestVM
+    {
+    }
+
+    public class ProfissionalSalvarRequestVM
+    {
+    }
+
+    public class ProfissionalSalvarResponseVM
+    {
+    }
+
+    public class ProfissionalPesquisarResponseVM
+    {
+    }
+
+    public class VagaPesquisarResponseVM
+    {
+    }
+
+    public class VagaPesquisarRequestVM
+    {
+    }
+
 }

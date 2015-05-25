@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.IOC
 {
-    public class Class1
+    public static class IOC
     {
+
+
+        public static T Get<T>()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

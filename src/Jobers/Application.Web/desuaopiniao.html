@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Sat May 23 2015 18:42:21 GMT+0000 (UTC) -->
+<html data-wf-site="5549680c795cdab862a1f30b" data-wf-page="5549f364795cdab862a20709">
+<head>
+  <meta charset="utf-8">
+  <title>desuaopiniao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/jobers.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Droid Sans:400,700"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
+  <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+</head>
+<body>
+  <div class="w-nav navbar bagroundtopo" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+    <div class="w-container">
+      <a class="w-nav-brand logo" href="#"></a>
+      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link navlink" href="#">Entrar</a>
+      </nav>
+      <div class="w-nav-button">
+        <div class="w-icon-nav-menu iconmenu"></div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-8">
+          <div class="w-tabs tabscontent" data-duration-in="300" data-duration-out="100">
+            <div class="w-tab-menu">
+              <a class="w-tab-link w-inline-block tabsmenu" data-w-tab="Tab 1">
+                <div>Avaliar empresa</div>
+              </a>
+              <a class="w-tab-link w--current w-inline-block tabsmenu" data-w-tab="Tab 2">
+                <div>Informar&nbsp;Salário</div>
+              </a>
+            </div>
+            <div class="w-tab-content">
+              <div class="w-tab-pane conteudoopiniao" data-w-tab="Tab 1">
+                <div class="w-form">
+                  <form class="formavalie" id="email-form" name="email-form" data-name="Email Form">
+                    <input class="w-input" id="Nome" type="text" placeholder="Nome da empresa" name="Nome" data-name="Nome" required="required">
+                    <input class="w-input" id="Site" type="text" placeholder="Site da empresa" name="Site" data-name="Site">
+                    <label class="titulosavalie" for="Titulo">Trabalha na empresa atualmente?</label>
+                    <label class="titulosavalie" for="Titulo">Título da&nbsp;avaliação</label>
+                    <div class="w-row">
+                      <div class="w-col w-col-4">
+                        <select class="w-select" id="TrabalhaNaEmpresa-2" name="TrabalhaNaEmpresa-2" data-name="Trabalha Na Empresa 2">
+                          <option value="Sim">Sim</option>
+                          <option value="Nao">Não</option>
+                        </select>
+                      </div>
+                      <div class="w-col w-col-8"></div>
+                    </div>
+                    <input class="w-input" id="Titulo" type="text" placeholder="Dê um título que resuma sua avaliação " name="Titulo" data-name="Titulo" required="required">
+                    <label class="titulosavalie" for="Legal">Pontos positivos</label>
+                    <textarea class="w-input" id="Legal" placeholder="Diga-nos o que há de legal na sua empresa" name="Legal" data-name="Legal" required="required"></textarea>
+                    <label class="titulosavalie" for="Ruim">Pontos Negativos</label>
+                    <textarea class="w-input" id="Ruim" placeholder="Diga-nos o que você não gosta na sua empresa." name="Ruim" data-name="Ruim"></textarea>
+                    <label class="maisinfo" for="email-5">Dê mais informações, mas cuidado para não sair do anonimato.</label>
+                    <input class="w-input" id="Cargo" type="text" placeholder="Cargo" name="Cargo" data-name="Cargo">
+                    <input class="w-input" id="Cidade" type="text" placeholder="Cidade" name="Cidade" data-name="Cidade" required="required">
+                    <label class="titulosavalie" for="Ruim-2">Ajude sua empresa a melhorar</label>
+                    <textarea class="w-input" id="Ruim-2" placeholder="Deixe suas idéias para sua empresa ser um ótimo lugar para trabalhar." name="Ruim-2" data-name="Ruim 2"></textarea>
+                    <label class="titulosavalie" for="Ruim-2">Diga-nos o quanto está satisfeito quanto a:</label>
+                    <label class="titulosavalie" for="Ruim-2">Salário e benefícios&nbsp;</label>
+                    <label class="titulosavalie" for="Ruim-2">Plano de carreira</label>
+                    <label class="titulosavalie" for="Ruim-2">Metodologia da empresa</label>
+                    <label class="titulosavalie" for="Ruim-2">Ambiente e qualidade de vida</label>
+                    <label class="titulosavalie" for="Ruim-2">Recomendaria a empresa?</label>
+                    <input class="w-button" type="submit" value="Submit" data-wait="Please wait...">
+                  </form>
+                  <div class="w-form-done">
+                    <p>Thank you! Your submission has been received!</p>
+                  </div>
+                  <div class="w-form-fail">
+                    <p>Oops! Something went wrong while submitting the form</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-tab-pane w--tab-active" data-w-tab="Tab 2">
+                <div class="w-form">
+                  <form class="formavalie" id="email-form" name="email-form" data-name="Email Form">
+                    <input class="w-input" id="Nome-2" type="text" placeholder="Nome da empresa" name="Nome-2" data-name="Nome 2" required="required">
+                    <input class="w-input" id="Site-2" type="text" placeholder="Site da empresa" name="Site-2" data-name="Site 2">
+                    <input class="w-input" id="Cargo-2" type="text" placeholder="Cargo" name="Cargo" data-name="Cargo">
+                    <select class="w-select" id="Estado" name="Estado" data-name="Estado">
+                      <option value="">Estado</option>
+                      <option value="First">First Choice</option>
+                      <option value="Second">Second Choice</option>
+                      <option value="Third">Third Choice</option>
+                    </select>
+                    <select class="w-select" id="Cidade-2" name="Cidade" data-name="Cidade">
+                      <option value="">Cidade</option>
+                      <option value="First">First Choice</option>
+                      <option value="Second">Second Choice</option>
+                      <option value="Third">Third Choice</option>
+                    </select>
+                    <label class="titulosavalie" for="Titulo">Trabalha na empresa atualmente?</label>
+                    <div class="w-row">
+                      <div class="w-col w-col-4">
+                        <select class="w-select" id="TrabalhaNaEmpresa" name="TrabalhaNaEmpresa" data-name="TrabalhaNaEmpresa">
+                          <option value="Sim">Sim</option>
+                          <option value="Nao">Não</option>
+                        </select>
+                      </div>
+                      <div class="w-col w-col-8"></div>
+                    </div>
+                    <label class="titulosavalie" for="Salario">Valor do seu salário bruto</label>
+                    <input class="w-input" id="Salario" type="text" placeholder="R$ 00.000,00" name="Salario" data-name="Salario" required="required">
+                    <label class="titulosavalie" for="Ruim-2">Tipo de contrato</label>
+                    <div class="w-row">
+                      <div class="w-col w-col-4">
+                        <select class="w-select" id="TipoContrato" name="TipoContrato" data-name="TipoContrato">
+                          <option value="CLT">CLT</option>
+                          <option value="PJ">PJ</option>
+                          <option value="Flex">Flex</option>
+                          <option value="Outro">Outro</option>
+                        </select>
+                      </div>
+                      <div class="w-col w-col-8"></div>
+                    </div>
+                    <label class="titulosavalie" for="Ruim-2">Renda variável</label>
+                    <div class="w-checkbox">
+                      <input class="w-checkbox-input" id="PLR" type="checkbox" name="PLR" data-name="PLR">
+                      <label class="w-form-label" for="PLR">PLR</label>
+                    </div>
+                    <div class="w-checkbox">
+                      <input class="w-checkbox-input" id="Bonus" type="checkbox" name="Bonus" data-name="Bonus">
+                      <label class="w-form-label" for="Bonus">Bônus</label>
+                    </div>
+                    <div class="w-checkbox">
+                      <input class="w-checkbox-input" id="Comiss-o" type="checkbox" name="Comiss-o" data-name="Comissão">
+                      <label class="w-form-label" for="Comiss-o">Comissão</label>
+                    </div>
+                    <div class="w-checkbox">
+                      <input class="w-checkbox-input" id="Outros" type="checkbox" name="Outros" data-name="Outros">
+                      <label class="w-form-label" for="Outros">Outros</label>
+                    </div>
+                    <label class="titulosavalie" for="Ruim-2">Benefícios</label>
+                    <div class="w-row">
+                      <div class="w-col w-col-6">
+                        <div class="w-checkbox">
+                          <input class="w-checkbox-input" id="VT" type="checkbox" name="VT" data-name="VT">
+                          <label class="w-form-label" for="VT">Vale transporte</label>
+                        </div>
+                        <div class="w-checkbox">
+                          <input class="w-checkbox-input" id="VR" type="checkbox" name="VR" data-name="VR">
+                          <label class="w-form-label" for="VR">Vale refeição/Refeirtório</label>
+                        </div>
+                        <div class="w-checkbox">
+                          <input class="w-checkbox-input" id="AM" type="checkbox" name="AM" data-name="AM">
+                          <label class="w-form-label" for="AM">Assistência médica</label>
+                        </div>
+                        <div class="w-checkbox">
+                          <input class="w-checkbox-input" id="SV" type="checkbox" name="SV" data-name="SV">
+                          <label class="w-form-label" for="SV">Seguro de vida</label>
+                        </div>
+                      </div>
+                      <div class="w-col w-col-6">
+                        <div class="w-checkbox">
+                          <input class="w-checkbox-input" id="AC" type="checkbox" name="AC" data-name="AC">
+                          <label class="w-form-label" for="AC">Auxílio Creche&nbsp;</label>
+                        </div>
+                        <div class="w-checkbox">
+                          <input class="w-checkbox-input" id="AO" type="checkbox" name="AO" data-name="AO">
+                          <label class="w-form-label" for="AO">Assistência Odontológica</label>
+                        </div>
+                        <div class="w-checkbox">
+                          <input class="w-checkbox-input" id="VA" type="checkbox" name="VA" data-name="VA">
+                          <label class="w-form-label" for="VA">Vale alimentação/Cesta básica</label>
+                        </div>
+                        <div class="w-checkbox">
+                          <input class="w-checkbox-input" id="PP" type="checkbox" name="PP" data-name="PP">
+                          <label class="w-form-label" for="PP">Previdência privada</label>
+                        </div>
+                      </div>
+                    </div>
+                    <input class="w-button" type="submit" value="Submit" data-wait="Please wait...">
+                  </form>
+                  <div class="w-form-done">
+                    <p>Thank you! Your submission has been received!</p>
+                  </div>
+                  <div class="w-form-fail">
+                    <p>Oops! Something went wrong while submitting the form</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-4"></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

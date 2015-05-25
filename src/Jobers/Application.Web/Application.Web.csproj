@@ -77,6 +77,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\EmpresaController.cs" />
+    <Compile Include="Controllers\ProfissionalController.cs" />
+    <Compile Include="Controllers\VagaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -93,8 +96,25 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Model\Domain.Model.csproj">
+      <Project>{dde66a4d-e93f-4346-8a79-d380b60a6cfb}</Project>
+      <Name>Domain.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.Service\Domain.Service.csproj">
+      <Project>{985b5b79-81ae-4033-9221-481a6ff3ae03}</Project>
+      <Name>Domain.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.VM\Domain.VM.csproj">
+      <Project>{2c729980-09c0-4661-b02c-9615846e0d81}</Project>
+      <Name>Domain.VM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.IOC\Infrastructure.IOC.csproj">
+      <Project>{c74f3418-2889-4205-8abd-b06331ab19ee}</Project>
+      <Name>Infrastructure.IOC</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
