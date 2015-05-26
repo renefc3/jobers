@@ -6,5 +6,7 @@ namespace Jobers.Domain.Service
     {
         EmpresaPesquisarResponseVM Pesquisar(EmpresaPesquisarRequestVM requestVm);
         EmpresaSalvarResponseVM Salvar(EmpresaSalvarRequestVM requestVm);
+        EmpresaAvaliarResponseVM Avaliar(EmpresaAvaliarRequestVM requestVm);
+        EmpresaDefinirSalarioResponseVM DefinirSalario(EmpresaDefinirSalarioRequestVM requestVm);
     }
 }

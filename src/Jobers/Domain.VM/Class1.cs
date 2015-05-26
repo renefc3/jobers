@@ -85,4 +85,55 @@ namespace Jobers.Domain.VM
     {
     }
 
+    public class EmpresaDefinirSalarioRequestVM : RequestBaseVM<EmpresaDefinirSalarioRequestVM.EntradaEmpresaDefinirSalarioRequestVM>
+    {
+        public class EntradaEmpresaDefinirSalarioRequestVM
+        {
+            public int IdEmpresa { get; set; }
+            public string NomeEmpresa { get; set; }
+            public string SiteEmpresa { get; set; }
+
+            public bool TrabalhaAtualmente { get; set; }
+            public decimal Salario { get; set; }
+            public int TipoContracao { get; set; }
+            public string RamoEmpresa { get; set; }
+            public string Cidade { get; set; }
+        }
+    }
+
+    public class EmpresaDefinirSalarioResponseVM
+    {
+    }
+
+    public class EmpresaAvaliarResponseVM : RequestBaseVM<EmpresaAvaliarResponseVM.SaidaEmpresaAvaliarResponseVM>
+    {
+        public class SaidaEmpresaAvaliarResponseVM
+        {
+         
+
+        }
+    }
+
+    
+
+    public class EmpresaAvaliarRequestVM : RequestBaseVM<EmpresaAvaliarRequestVM.EntradaEmpresaAvaliarRequestVM>
+    {
+        public class EntradaEmpresaAvaliarRequestVM
+        {
+            public int IdEmpresa { get; set; }
+            public string NomeEmpresa { get; set; }
+            public string SiteEmpresa { get; set; }
+
+            public bool TrabalhaAtualmente { get; set; }
+            public string TituloAvaliacao { get; set; }
+            public string PontosPositivos { get; set; }
+            public string PontosNegativos { get; set; }
+            public string Cargo { get; set; }
+            public string Cidade { get; set; }
+            public string MelhoriasParaEmpresa { get; set; }
+            public string RamoEmpresa { get; set; }
+        }
+    }
+
+
 }

@@ -23,5 +23,21 @@ namespace Jobers.Application.Web.Controllers
             IEmpresaServico srvEmpresa = IOC.Get<IEmpresaServico>();
             return srvEmpresa.Salvar(requestVm);
         }
-    } 
+
+        public EmpresaAvaliarResponseVM Avaliar(EmpresaAvaliarRequestVM requestVm)
+        {
+            IEmpresaServico srvEmpresa = IOC.Get<IEmpresaServico>();
+            return srvEmpresa.Avaliar(requestVm);
+
+        }
+
+        public EmpresaDefinirSalarioResponseVM DefinirSalario(EmpresaDefinirSalarioRequestVM requestVm)
+        {
+            IEmpresaServico srvEmpresa = IOC.Get<IEmpresaServico>();
+            return srvEmpresa.DefinirSalario(requestVm);
+        }
+
+    }
+
+    
 }
