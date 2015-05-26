@@ -49,8 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="EmpresaRepositorio.cs" />
     <Compile Include="Map\BaseClassMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VagaRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

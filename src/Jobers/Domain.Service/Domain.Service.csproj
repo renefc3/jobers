@@ -56,10 +56,6 @@
       <Project>{2C729980-09C0-4661-B02C-9615846E0D81}</Project>
       <Name>Domain.VM</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.IOC\Infrastructure.IOC.csproj">
-      <Project>{C74F3418-2889-4205-8ABD-B06331AB19EE}</Project>
-      <Name>Infrastructure.IOC</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

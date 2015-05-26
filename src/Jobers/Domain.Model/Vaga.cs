@@ -2,7 +2,26 @@
 
 namespace Jobers.Domain.Model
 {
-    public interface IVagaRepositorio
+    public interface IRepositorio<T> where T:IEntidade
+    {
+        void Salvar(T entidade);
+
+    }
+
+
+    public interface ISalariosEmpresaRepositorio : IRepositorio<SalariosEmpresa>
+    {
+    }
+
+    public interface IAvaliacoesEmpresaRepositorio : IRepositorio<AvaliacoesEmpresa>
+    {
+    }
+
+    public interface IEmpresaRepositorio : IRepositorio<Empresa>
+    {
+    }
+
+    public interface IVagaRepositorio : IRepositorio<Vaga>
     {
     }
 

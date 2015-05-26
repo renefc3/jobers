@@ -6,7 +6,18 @@ namespace Jobers.Domain.Service.Implementacao
 {
     public class EmpresaServico : IEmpresaServico
     {
-        
+
+        private IAvaliacoesEmpresaRepositorio _repAvaliacoesEmpresa;
+        private ISalariosEmpresaRepositorio _repSalarioEmpresa;
+        private IEmpresaRepositorio _repEmpresa;
+
+        public EmpresaServico(IAvaliacoesEmpresaRepositorio repAvaliacoesEmpresa, ISalariosEmpresaRepositorio repSalarioEmpresa, IEmpresaRepositorio repEmpresa)
+        {
+            _repAvaliacoesEmpresa = repAvaliacoesEmpresa;
+            _repSalarioEmpresa = repSalarioEmpresa;
+            _repEmpresa = repEmpresa;
+        }
+
         public EmpresaPesquisarResponseVM Pesquisar(EmpresaPesquisarRequestVM requestVm)
         {
             throw new NotImplementedException();
@@ -33,7 +44,7 @@ namespace Jobers.Domain.Service.Implementacao
             avaliacao.TituloAvaliacao = requestVm.Entrada.TituloAvaliacao;
             avaliacao.TrabalhaAtualmente = requestVm.Entrada.TrabalhaAtualmente;
             
-
+            _repAvaliacoesEmpresa.Salvar(avaliacao);
             throw new NotImplementedException();
 
         }
@@ -50,7 +61,7 @@ namespace Jobers.Domain.Service.Implementacao
             salario.SiteEmpresa = requestVm.Entrada.SiteEmpresa;
             salario.TipoContratacao = (TipoContratacao)requestVm.Entrada.TipoContracao;
             salario.TrabalhaAtualmente = requestVm.Entrada.TrabalhaAtualmente;
-            
+            _repSalarioEmpresa.Salvar(salario);
             
 
             throw new NotImplementedException();

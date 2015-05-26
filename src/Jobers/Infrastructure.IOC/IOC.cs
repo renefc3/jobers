@@ -8,7 +8,12 @@ namespace Infrastructure.IOC
 {
     public static class IOC
     {
+        public static void Configure()
+        {
+            
+            
 
+        }
 
         public static T Get<T>()
         {

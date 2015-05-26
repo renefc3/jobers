@@ -1,19 +1,18 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Infrastructure.IOC;
-using Jobers.Domain.Model;
+﻿using Jobers.Domain.Model;
 using Jobers.Domain.VM;
 
 namespace Jobers.Domain.Service.Implementacao
 {
     public class VagaServico : IVagaServico
     {
+        private IVagaRepositorio _repVaga;
+        public VagaServico( IVagaRepositorio repVaga)
+        {
+            _repVaga = repVaga;
+        }
         public VagaAdicionarVagaResponseVM AdicionarVaga(VagaAdicionarVagaRequestVM requestVm)
         {
-            IVagaRepositorio repVaga = IOC.Get<IVagaRepositorio>();
-
+           
 
             return null;
 
