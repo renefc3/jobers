@@ -33,7 +33,7 @@ namespace Jobers.Domain.Service.Implementacao
             AvaliacoesEmpresa avaliacao = new AvaliacoesEmpresa();
             avaliacao.Cargo = requestVm.Entrada.Cargo;
             avaliacao.Cidade = requestVm.Entrada.Cidade;
-            //avaliacao.Empresa = requestVm.Entrada.IdEmpresa;
+            avaliacao.Empresa = _repEmpresa.BuscarPor(requestVm.Entrada.IdEmpresa);
             avaliacao.NomeEmpresa = requestVm.Entrada.NomeEmpresa;
             avaliacao.MelhoriasParaEmpresa = requestVm.Entrada.MelhoriasParaEmpresa;
             avaliacao.PontosNegativos = requestVm.Entrada.PontosNegativos;
@@ -43,18 +43,18 @@ namespace Jobers.Domain.Service.Implementacao
             avaliacao.SiteEmpresa = requestVm.Entrada.SiteEmpresa;
             avaliacao.TituloAvaliacao = requestVm.Entrada.TituloAvaliacao;
             avaliacao.TrabalhaAtualmente = requestVm.Entrada.TrabalhaAtualmente;
-            
-            _repAvaliacoesEmpresa.Salvar(avaliacao);
-            throw new NotImplementedException();
 
+            _repAvaliacoesEmpresa.Salvar(avaliacao);
+
+            return new EmpresaAvaliarResponseVM();
         }
 
         public EmpresaDefinirSalarioResponseVM DefinirSalario(EmpresaDefinirSalarioRequestVM requestVm)
         {
             SalariosEmpresa salario = new SalariosEmpresa();
-            
+
             salario.Cidade = requestVm.Entrada.Cidade;
-            //salario.Empresa = requestVm.Entrada.IdEmpresa;
+            salario.Empresa = _repEmpresa.BuscarPor(requestVm.Entrada.IdEmpresa);
             salario.NomeEmpresa = requestVm.Entrada.NomeEmpresa;
             salario.Salario = requestVm.Entrada.Salario;
             salario.RamoEmpresa = requestVm.Entrada.RamoEmpresa;
@@ -62,11 +62,8 @@ namespace Jobers.Domain.Service.Implementacao
             salario.TipoContratacao = (TipoContratacao)requestVm.Entrada.TipoContracao;
             salario.TrabalhaAtualmente = requestVm.Entrada.TrabalhaAtualmente;
             _repSalarioEmpresa.Salvar(salario);
-            
 
-            throw new NotImplementedException();
-            
-
+            return new EmpresaDefinirSalarioResponseVM();
         }
     }
 }

@@ -48,7 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BaseRepositorio.cs" />
+    <Compile Include="GerenciadorConexaoNHibernate.cs" />
     <Compile Include="EmpresaRepositorio.cs" />
     <Compile Include="Map\BaseClassMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
