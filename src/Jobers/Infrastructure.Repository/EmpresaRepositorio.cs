@@ -4,5 +4,6 @@ namespace Infrastructure.Repository
 {
     public class EmpresaRepositorio : BaseRepositorio<Empresa>, IEmpresaRepositorio
     {
+
     }
 }

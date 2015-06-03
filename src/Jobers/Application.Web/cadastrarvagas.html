@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
 <!-- Last Published: Tue Jun 02 2015 01:11:26 GMT+0000 (UTC) -->
-<html data-wf-site="5549680c795cdab862a1f30b" data-wf-page="55608c9a8b53b4611a24e24e">
+<html data-wf-site="5549680c795cdab862a1f30b" data-wf-page="556cfd14826c84987e175150">
 <head>
   <meta charset="utf-8">
-  <title>CadastrarCV</title>
+  <title>CadastrarVagas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -33,34 +33,23 @@
       </div>
     </div>
   </div>
-  <div class="w-section">
-    <div class="w-container">
-      <div class="w-row">
-        <div class="w-col w-col-8"></div>
-        <div class="w-col w-col-2">
-          <a class="button linkedin" href="#"></a>
-        </div>
-        <div class="w-col w-col-2"></div>
-      </div>
-    </div>
-  </div>
   <div class="w-container">
     <div class="w-form">
       <form class="formavalie" id="email-form" name="email-form" data-name="Email Form">
-        <label class="titulosavalie" for="NomeCV">Dados pessoais</label>
-        <input class="w-input" id="NomeCV" type="text" placeholder="Digite seu nome completo" name="NomeCV" data-name="NomeCV" required="required">
+        <label class="titulosavalie" for="NomeE">Nome da empresa</label>
+        <input class="w-input" id="NomeE" type="text" name="NomeE" data-name="NomeE" required="required">
+        <label class="titulosavalie" for="CargoE">Cargo</label>
+        <input class="w-input" id="CargoE" type="text" placeholder="Ex.: Analista de suporte nível 2" name="CargoE" data-name="CargoE" required="required">
+        <label class="titulosavalie" for="DescVagaE">Descrição da vaga</label>
+        <textarea class="w-input" id="DescVagaE" name="DescVagaE" data-name="DescVagaE" required="required"></textarea>
         <div class="w-row">
           <div class="w-col w-col-6">
-            <input class="w-input" id="DtNascimento" type="text" placeholder="DD/MM/AAAA" name="DtNascimento" data-name="DtNascimento" required="required">
-            <select class="w-select" id="Sexo" name="Sexo" data-name="Sexo">
-              <option value="">Sexo</option>
-              <option value="Feminino">Feminino</option>
-              <option value="Masculino">Masculino</option>
-            </select>
-            <input class="w-input" id="Tel" type="text" placeholder="(99) 99999-9999" name="Tel" data-name="Tel" required="required">
+            <label class="titulosavalie" for="Email">Contato</label>
+            <input class="w-input" id="Email" type="text" placeholder="E-mail " name="Email" data-name="Email" required="required">
+            <input class="w-input" id="TelE" type="text" placeholder="(99) 9999-9999" name="TelE" data-name="TelE" required="required">
           </div>
           <div class="w-col w-col-6">
-            <input class="w-input" id="Email" type="text" placeholder="E-mail" name="Email" data-name="Email" required="required">
+            <label class="titulosavalie" for="Estado-2">Localidade</label>
             <select class="w-select" id="Estado-2" name="Estado-2" data-name="Estado 2">
               <option value="">Estado</option>
               <option value="First">First Choice</option>
@@ -73,16 +62,6 @@
               <option value="Second">Second Choice</option>
               <option value="Third">Third Choice</option>
             </select>
-          </div>
-        </div>
-        <label class="titulosavalie" for="CPF">Dados para login</label>
-        <input class="w-input" id="CPF" type="text" placeholder="Digite seu CPF(999.999.999-99)" name="CPF" data-name="CPF" required="required">
-        <div class="w-row">
-          <div class="w-col w-col-6">
-            <input class="w-input" id="Senha" type="text" placeholder="Digite sua senha" name="Senha" data-name="Senha" required="required">
-          </div>
-          <div class="w-col w-col-6">
-            <input class="w-input" id="Senhaconfirmacao" type="text" placeholder="Confirme sua senha" name="Senhaconfirmacao" data-name="Senhaconfirmacao" required="required">
           </div>
         </div>
         <div class="w-row">
@@ -104,70 +83,14 @@
               <option value="Até 1 mês">Até 1 mês</option>
             </select>
           </div>
-          <div class="w-col w-col-4">
-            <label class="titulosavalie" for="PossuiCNPJ">Possui CNPJ?</label>
-            <select class="w-select" id="PossuiCNPJ" name="PossuiCNPJ" data-name="PossuiCNPJ">
-              <option value="Sim">Sim</option>
-              <option value="Não">Não</option>
-            </select>
-          </div>
-        </div>
-        <div class="w-row">
-          <div class="w-col w-col-4">
-            <label class="titulosavalie" for="ingles">Qual o nível do seu inglês?</label>
-            <select class="w-select" id="ingles" name="ingles" data-name="ingles">
-              <option value="Técnico">Técnico</option>
-              <option value="Intermediario">Intermediario</option>
-              <option value="Fluente">Fluente</option>
-            </select>
-          </div>
-          <div class="w-col w-col-8">
-            <div class="w-row">
-              <div class="w-col w-col-6">
-                <label class="titulosavalie" for="disponibilidade-2">Possui conhecimento em outro idioma?</label>
-                <select class="w-select" id="disponibilidade-2" name="disponibilidade-2" data-name="Disponibilidade 2">
-                  <option value="Selecione">Selecione</option>
-                  <option value="Alemão">Alemão</option>
-                  <option value="Espanhol">Espanhol</option>
-                  <option value="Francês">Francês</option>
-                  <option value="Italiano">Italiano</option>
-                  <option value="Japonês">Japonês</option>
-                  <option value="Mandarim">Mandarim</option>
-                </select>
-              </div>
-              <div class="w-col w-col-6">
-                <label class="titulosavalie" for="ingles-2">Nível?</label>
-                <select class="w-select" id="ingles-2" name="ingles-2" data-name="Ingles 2">
-                  <option value="Técnico">Técnico</option>
-                  <option value="Intermediario">Intermediario</option>
-                  <option value="Fluente">Fluente</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-row">
-          <div class="w-col w-col-4">
-            <label class="titulosavalie" for="ingles-3">Escolaridade</label>
-            <select class="w-select" id="ingles-3" name="ingles-3" data-name="Ingles 3">
-              <option value="Técnico">Técnico</option>
-              <option value="Intermediario">Intermediario</option>
-              <option value="Fluente">Fluente</option>
-            </select>
-          </div>
-          <div class="w-col w-col-4"></div>
           <div class="w-col w-col-4"></div>
         </div>
-        <label class="titulosavalie" for="NomeCV-2">Pretensão salarial</label>
         <div class="w-row">
           <div class="w-col w-col-6">
-            <label class="titulosavalie" for="PretencaoCLT">CLT</label>
+            <label class="titulosavalie" for="PretencaoCLT">Salário</label>
             <input class="w-input" id="PretencaoCLT" type="text" placeholder="R$ 00.000,00" name="PretencaoCLT" data-name="PretencaoCLT">
           </div>
-          <div class="w-col w-col-6">
-            <label class="titulosavalie" for="PretensaoPJ">PJ</label>
-            <input class="w-input" id="PretensaoPJ" type="text" placeholder="R$ 00.000,00" name="PretensaoPJ" data-name="PretensaoPJ" required="required">
-          </div>
+          <div class="w-col w-col-6"></div>
         </div>
         <label class="titulosavalie" for="NomeCV-2">Conhecimentos técnicos</label>
         <div class="w-row">
@@ -262,10 +185,6 @@
             </div>
           </div>
         </div>
-        <label class="titulosavalie" for="field">Apresentação</label>
-        <textarea class="w-input" id="field" placeholder="Example Text" name="field"></textarea>
-        <label class="titulosavalie" for="Senha-2">Currículo</label>
-        <textarea class="w-input" id="field-2" placeholder="Example Text" name="field-2" data-name="Field 2"></textarea>
         <input class="w-button" type="submit" value="Submit" data-wait="Please wait...">
       </form>
       <div class="w-form-done">

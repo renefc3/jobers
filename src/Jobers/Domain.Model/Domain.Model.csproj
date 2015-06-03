@@ -42,7 +42,12 @@
     <Compile Include="AvaliacoesEmpresa.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Empresa.cs" />
+    <Compile Include="IAvaliacoesEmpresaRepositorio.cs" />
     <Compile Include="IComponenteEntidade.cs" />
+    <Compile Include="IEmpresaRepositorio.cs" />
+    <Compile Include="IRepositorio.cs" />
+    <Compile Include="ISalariosEmpresaRepositorio.cs" />
+    <Compile Include="IVagaRepositorio.cs" />
     <Compile Include="Nota.cs" />
     <Compile Include="Profissional.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -26,9 +26,8 @@ namespace Infrastructure.Repository
             lock (_locker)
             {
                 if (_sessionFactory != null)
-                {
                     return _sessionFactory;
-                }
+
                 Configuration cfg = new Configuration();
 
                 cfg = cfg.Configure("hibernate.xml.cfg");

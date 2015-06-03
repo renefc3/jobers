@@ -88,6 +88,19 @@ a.w--current {
   line-height: 37px;
   font-weight: 400;
 }
+.button.linkedin {
+  width: 136px;
+  height: 25px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  border-radius: 4px;
+  background-image: url('../images/li_button.png');
+  background-position: 0% 0%;
+  background-size: 136px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
 .pesquisa {
   height: 600px;
   background-image: -webkit-linear-gradient(260deg, #45005c, rgba(190, 61, 255, 0.67)), url('../images/Foto 1.jpg');
